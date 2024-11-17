@@ -16,6 +16,22 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "permissions": ["tabs", "contextMenus", "storage", "scripting"],
-  "host_permissions": ["*://*/*"]
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "commands": {
+    "activate_extension": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+D",
+        "mac": "Command+Shift+D"
+      },
+      "description": "Activate the extension"
+    }
+  }
 }
