@@ -27,7 +27,7 @@ export const ROOT_DOM_ID = "react-container-for-note-extension";
 export const isScriptAllowedPage = async (tabId: number) => {
   await chrome.scripting.executeScript({
     target: { tabId },
-    func: () => {},
+    func: () => { },
   });
   return !chrome.runtime.lastError;
 };
@@ -157,7 +157,7 @@ const _handleMessagesFromPopup = (
     actions.getSetting().then((setting) => {
       sendResponse({ data: { notes } });
       injectContentScript(tabId).then(() =>
-        setupPage(tabId, tabUrl, notes, setting).catch((e) => {/* error */})
+        setupPage(tabId, tabUrl, notes, setting).catch((e) => {/* error */ })
       );
     });
   };

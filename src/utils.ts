@@ -33,9 +33,8 @@ export const decodeURL = (encodedUrl: string): string => {
 
 export const formURL = (url: string): string => {
   const parsedUrl = new URL(url);
-  return `${parsedUrl.protocol}//${parsedUrl.hostname}${parsedUrl.pathname}${
-    parsedUrl.search || ""
-  }`;
+  return `${parsedUrl.protocol}//${parsedUrl.hostname}${parsedUrl.pathname}${parsedUrl.search || ""
+    }`;
 };
 
 export const formatDate = (date: Date): string => {
